@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foglalás</title>
+</head>
+
+<body>
+    <h1>Foglalás</h1>
+    <form>
+        <label for="nev">Név</label>
+        <input type="text" name="nev""> <br>
+        <label for=" email">Email cím</label>
+        <input type=" text" name="email" placeholder="xx@xx.xx"> <br>
+        <label for="idopont">Időpont</label>
+        <input type="date" name="idopont" placeholder="éééé.hh.nn"> <br>
+        <label for="vendeg_szam">Vendégek száma:</label>
+        <input type="number" name="vendeg_szam"> <br>
+        <input type="submit" value="Foglalás">
+    </form>
+    <% if (errors> 0) { %>
+        <p style="color: red;">
+            <% {errors} %>
+        </p>
+        <% } %>
+</body>
+
+</html>
